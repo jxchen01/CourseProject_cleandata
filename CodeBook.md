@@ -9,6 +9,8 @@ Part 2: Variable description
 
 In tidy_dataset, 81 features are associated with each observation. The first one is the subjectID, indicating which subject these measurements come from. The last one is the ActivityType showing what kind of activity these values were measured in. The remaining 79 features are different measurements. 
 
+The descriptive feature labels are listed below.
+
  [2] "time_signal_of_Body_Acceleration-MeanValue-X"                                      
  [3] "time_signal_of_Body_Acceleration-MeanValue-Y"                                      
  [4] "time_signal_of_Body_Acceleration-MeanValue-Z"                                      
@@ -101,7 +103,5 @@ step 4: Combine test and merge data. cbind() is performed.
 step 5: Replace the numeric value of each row in column "ActivityType" by a descriptive name according to "activity_labels.txt"
 step 6: Group the subject ID and ActivityType. Compute the average value of each feature for each combination of subject ID and ActivityType, by sapply(split()).
 
- 
-step 5:
 
   
